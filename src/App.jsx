@@ -24,7 +24,7 @@ function App() {
   const [wallpaperIndex, setWallpaperIndex] = useState(localStorage.getItem("selectedWallpaper") || 1);
 
   return (
-    <main style={{backgroundImage:`url("/public/wallpapers/${wallpaperIndex}.jpg")`}}>
+    <main style={{backgroundImage:`url("/public/wallpaper-high/${wallpaperIndex}.jpg")`}}>
       {!isFullScreen && (
         <>
           <Nav windowState={windowState} setWindowState={setWindowState} />
