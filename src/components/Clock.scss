@@ -1,0 +1,152 @@
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: fit-content;
+  position: absolute;
+  z-index: 0;
+  top: 17rem;
+  right: 3rem;
+  background-color: rgba(255, 255, 255, 0.153);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+    inset 0px 4px 8px 0px rgba(244, 244, 254, 0.25),
+    inset 0px -4px 8px 0px rgba(7, 7, 7, 0.142);
+}
+
+.clock-face {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.1) ;
+
+  // Hour markers
+  .hour-marker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+    .marker-line {
+      width: 2px;
+      height: 8px;
+      background: #ffffffb5;
+      margin-top: 5px;
+      border-radius: 2px;
+    }
+  }
+
+  // Clock hands
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    border-radius: 10px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hour-hand {
+    width: 2px;
+    height: 22px;
+    background: #4b4b4b;
+    margin-left: -2px;
+    z-index: 3;
+  }
+
+  .minute-hand {
+    width: 2.5px;
+    height: 28px;
+    background: #ffffff;
+    margin-left: -2px;
+    z-index: 4;
+  }
+
+  .second-hand {
+    width: 1px;
+    height: 35px;
+    background: #e74c3c;
+    margin-left: -1px;
+    z-index: 5;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  // Center dot
+  .center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Optional: Add some responsiveness
+@media (max-width: 768px) {
+  .clock-face {
+    width: 250px;
+    height: 250px;
+
+    .hour-hand {
+      height: 65px;
+    }
+
+    .minute-hand {
+      height: 90px;
+    }
+
+    .second-hand {
+      height: 100px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .clock-face {
+    width: 200px;
+    height: 200px;
+    border-width: 6px;
+
+    .hour-hand {
+      height: 50px;
+      width: 5px;
+      margin-left: -2.5px;
+    }
+
+    .minute-hand {
+      height: 70px;
+      width: 3px;
+      margin-left: -1.5px;
+    }
+
+    .second-hand {
+      height: 80px;
+    }
+
+    .center-dot {
+      width: 12px;
+      height: 12px;
+    }
+
+    .hour-marker .marker-line {
+      height: 12px;
+      width: 2px;
+      margin-top: 8px;
+    }
+  }
+}

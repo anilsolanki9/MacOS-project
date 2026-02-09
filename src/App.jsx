@@ -6,8 +6,9 @@ import Note from "./components/windows/Note";
 import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";
 import Cli from "./components/windows/Cli";
-import { useState } from "react"; 
+import { useState } from "react";
 import Settings from "./components/windows/Settings";
+import Clock from "./components/Clock";
 
 function App() {
   const [windowState, setWindowState] = useState({
@@ -21,10 +22,16 @@ function App() {
 
   const [isFullScreen, setIsFullScreen] = useState(false);
 
-  const [wallpaperIndex, setWallpaperIndex] = useState(localStorage.getItem("selectedWallpaper") || 1);
+  const [wallpaperIndex, setWallpaperIndex] = useState(
+    localStorage.getItem("selectedWallpaper") || 1,
+  );
 
   return (
-    <main style={{backgroundImage:`url("/wallpaper-high/${wallpaperIndex}.jpg")`}}>
+    <main
+      style={{
+        backgroundImage: `url("/wallpaper-high/${wallpaperIndex}.jpg")`,
+      }}
+    >
       {!isFullScreen && (
         <>
           <Nav windowState={windowState} setWindowState={setWindowState} />
@@ -32,23 +39,56 @@ function App() {
         </>
       )}
 
+      <Clock />
+
       {windowState.github && (
-        <Github windowName="github" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+        <Github
+          windowName="github"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+        />
       )}
       {windowState.note && (
-        <Note windowName="note" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+        <Note
+          windowName="note"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+        />
       )}
       {windowState.resume && (
-        <Resume windowName="resume" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+        <Resume
+          windowName="resume"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+        />
       )}
       {windowState.spotify && (
-        <Spotify windowName="spotify" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+        <Spotify
+          windowName="spotify"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+        />
       )}
       {windowState.cli && (
-        <Cli windowName="cli" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+        <Cli
+          windowName="cli"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+        />
       )}
       {windowState.settings && (
-        <Settings windowName="settings" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} setWallpaperIndex={setWallpaperIndex} />
+        <Settings
+          windowName="settings"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
+          setWallpaperIndex={setWallpaperIndex}
+        />
       )}
     </main>
   );
