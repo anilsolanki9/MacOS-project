@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "image": "/projects-images/project1.png",
+    "title": "Astratto – Design Agency Website",
+    "description": "A modern and visually rich design agency website with smooth animations, clean layouts, and a premium UI feel. Focused on branding, motion, and presentation.",
+    "tags": ["React", "SCSS", "Framer Motion", "UI Design"],
+    "repoLink": "https://github.com/anilsolanki9/Astratto-Design-agency",
+    "demoLink": "https://astratto-design-agency.vercel.app/"
+  },
+  {
+    "id": 6,
+    "image": "/projects-images/project6.png",
+    "title": "Moviq – Streaming Platform",
+    "description": "A movie streaming platform UI that showcases movies with rich visuals, modern layouts, and a cinematic browsing experience.",
+    "tags": ["React", "API", "Movie App", "UI Design"],
+    "repoLink": "https://github.com/anilsolanki9/Moviq-streaming-Platform-project",
+    "demoLink": "https://moviq-streaming-platform-project.vercel.app/"
+  },
+  {
+    "id": 3,
+    "image": "/projects-images/project3.png",
+    "title": "Razorpay Clone",
+    "description": "A responsive Razorpay landing page clone built to replicate real-world fintech UI, layouts, and component structure with pixel-accurate design.",
+    "tags": ["React", "Tailwind CSS", "UI Clone"],
+    "repoLink": "https://github.com/anilsolanki9/Razor-pay-clone",
+    "demoLink": "https://razor-pay-clone-wine.vercel.app/"
+  },
+  {
+    "id": 9,
+    "image": "/projects-images/project9.png",
+    "title": "DVSY Fashion Store",
+    "description": "A fashion e-commerce style frontend with modern product layouts, smooth transitions, and a clean Tailwind-powered design.",
+    "tags": ["React", "Tailwind CSS", "E-commerce UI"],
+    "repoLink": "https://github.com/anilsolanki9/DVSY-Fashion-React-Tailwind-Project",
+    "demoLink": "https://dvsy-fashion-react-tailwind-project.vercel.app/"
+  },
+  {
+    "id": 7,
+    "image": "/projects-images/project7.png",
+    "title": "Productivity Dashboard",
+    "description": "A productivity-focused dashboard that presents tasks, metrics, and daily insights in a clean and structured layout.",
+    "tags": ["React", "Dashboard", "UI", "State Management"],
+    "repoLink": "https://github.com/anilsolanki9/Productivity-dashboard",
+    "demoLink": "https://productivity-dashboard-rho.vercel.app/"
+  },
+
+  {
+    "id": 4,
+    "image": "/projects-images/project4.png",
+    "title": "Pokemon Saga",
+    "description": "A fun and interactive Pokémon-themed application displaying Pokémon data with dynamic UI, animations, and engaging visual presentation.",
+    "tags": ["React", "API", "CSS", "Animations"],
+    "repoLink": "https://github.com/anilsolanki9/Pokemon_Saga",
+    "demoLink": "https://pokemon-saga.vercel.app/"
+  },
+  {
+    "id": 5,
+    "image": "/projects-images/project5.png",
+    "title": "Modern Contact List",
+    "description": "A modern contact management application with clean UI, responsive design, and smooth user interactions for managing contacts efficiently.",
+    "tags": ["React", "CSS", "CRUD"],
+    "repoLink": "https://github.com/anilsolanki9/modern-contact-list",
+    "demoLink": "https://modern-contact-list.vercel.app/"
+  },
+  {
+    "id": 2,
+    "image": "/projects-images/project2.png",
+    "title": "Web Editor",
+    "description": "A browser-based code editor that allows users to write and preview HTML, CSS, and JavaScript in real time with a clean developer-friendly interface.",
+    "tags": ["HTML", "CSS", "JavaScript", "Live Preview"],
+    "repoLink": "https://github.com/anilsolanki9/web-editor",
+    "demoLink": "https://anilsolanki9.github.io/web-editor/"
+  },
+  {
+    "id": 14,
+    "image": "/projects-images/project14.png",
+    "title": "Pinterest Style Gallery",
+    "description": "A responsive Pinterest-style image gallery layout featuring a masonry grid, smooth hover effects, and a clean visual-first design.",
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive"],
+    "repoLink": "https://github.com/anilsolanki9/Pintrest-Style-Gallary",
+    "demoLink": "https://anilsolanki9.github.io/Pintrest-Style-Gallary/"
+  },
+  {
+    "id": 16,
+    "image": "/projects-images/project16.png",
+    "title": "ALVY Studio Website Clone",
+    "description": "A pixel-accurate clone of the ALVY Studio website featuring bold typography, smooth transitions, and a premium studio-style layout.",
+    "tags": ["HTML", "CSS", "Website Clone", "UI"],
+    "repoLink": "https://github.com/anilsolanki9/ALVY-website-studio-page-clone",
+    "demoLink": "https://anilsolanki9.github.io/ALVY-website-studio-page-clone/"
+  },
+  {
+    "id": 17,
+    "image": "/projects-images/project17.png",
+    "title": "Apple Website UI Clone",
+    "description": "A clean and minimal Apple website UI clone replicating Apple's visual language, spacing, and modern responsive layout.",
+    "tags": ["HTML", "CSS", "UI Clone", "Responsive"],
+    "repoLink": "https://github.com/anilsolanki9/Apple-website-ui-clone-task",
+    "demoLink": "https://anilsolanki9.github.io/Apple-website-ui-clone-task/"
+  },
+  {
+    "id": 15,
+    "image": "/projects-images/project15.png",
+    "title": "Flutter Website Ecosystem",
+    "description": "A modern informational webpage showcasing the Flutter ecosystem with structured sections, smooth scrolling, and a developer-focused layout.",
+    "tags": ["HTML", "CSS", "UI Design"],
+    "repoLink": "https://github.com/anilsolanki9/Flutter-website-ecosystem-webpage",
+    "demoLink": "https://anilsolanki9.github.io/Flutter-website-ecosystem-webpage/"
+  },
+
+  {
+    "id": 10,
+    "image": "/projects-images/project10.png",
+    "title": "Weathry – Weather App",
+    "description": "A weather application that displays real-time weather information with a minimal interface and location-based data.",
+    "tags": ["JavaScript", "Weather API", "CSS"],
+    "repoLink": "https://github.com/anilsolanki9/weathry-app-website",
+    "demoLink": "https://anilsolanki9.github.io/weathry-app-website/"
+  },
+
+  {
+    "id": 12,
+    "image": "/projects-images/project12.png",
+    "title": "Online Piano",
+    "description": "An interactive online piano that allows users to play musical notes directly from the browser using keyboard or mouse input.",
+    "tags": ["JavaScript", "Audio API", "Interactive UI"],
+    "repoLink": "https://github.com/anilsolanki9/Online-Piano-Project",
+    "demoLink": "https://anilsolanki9.github.io/Online-Piano-Project/"
+  },
+  {
+    "id": 8,
+    "image": "/projects-images/project8.png",
+    "title": "Superhero Cards",
+    "description": "A superhero-themed card-based UI showcasing characters with interactive hover effects and responsive layout.",
+    "tags": ["React", "CSS", "Card UI"],
+    "repoLink": "https://github.com/anilsolanki9/superhero-cards",
+    "demoLink": "https://superhero-cards.vercel.app/"
+  },
+  {
+    "id": 11,
+    "image": "/projects-images/project11.png",
+    "title": "Instagram Reels Section",
+    "description": "A UI recreation of Instagram Reels featuring vertical video layouts and mobile-first interaction design.",
+    "tags": ["HTML", "CSS", "UI Clone"],
+    "repoLink": "https://github.com/anilsolanki9/instagram-reels-section",
+    "demoLink": "https://anilsolanki9.github.io/instagram-reels-section/"
+  },
+  {
+    "id": 13,
+    "image": "/projects-images/project13.png",
+    "title": "Emoji & Alphabet Game",
+    "description": "A fun educational game designed to help users learn alphabets using emojis with interactive gameplay mechanics.",
+    "tags": ["JavaScript", "Game Logic", "DOM"],
+    "repoLink": "https://github.com/anilsolanki9/create-Emojies-Alphabets-Game",
+    "demoLink": "https://anilsolanki9.github.io/create-Emojies-Alphabets-Game/"
+  }
+]
