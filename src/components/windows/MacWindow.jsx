@@ -38,10 +38,10 @@ const MacWindow = ({
                 if (isFullScreen) setIsFullScreen(false);
               }}
             >
-              <img src="/public/window-nav-icons/cross.svg" alt="" />
+              <img src="/window-nav-icons/cross.svg" alt="" />
             </div>
             <div className="dot yellow">
-              <img src="/public/window-nav-icons/minus.svg" alt="" />
+              <img src="/window-nav-icons/minus.svg" alt="" />
             </div>
             <div
               className="dot green"
@@ -49,7 +49,7 @@ const MacWindow = ({
                 setIsFullScreen(isFullScreen ? false : true);
               }}
             >
-              <img src="/public/window-nav-icons/expand.svg" alt="" />
+              <img src="/window-nav-icons/expand.svg" alt="" />
             </div>
           </div>
 
