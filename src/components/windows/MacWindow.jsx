@@ -8,9 +8,10 @@ const MacWindow = ({
   height = "37vw",
   windowName,
   setWindowState,
+  isFullScreen,
+  setIsFullScreen,
 }) => {
-  // console.log(children)
-
+  console.log(isFullScreen);
   return (
     <Rnd
       default={{
@@ -23,22 +24,31 @@ const MacWindow = ({
       minHeight={300}
       // bounds="window"
       // dragHandleClassName="nav"
+      enableResizing={!isFullScreen}
+      disableDragging={isFullScreen}
+      className={`mac-window ${isFullScreen ? "full-screen" : ""}`}
     >
       <div className="window">
         <div className="nav">
           <div className="dots">
             <div
               className="dot red"
-              onClick={() =>
-                setWindowState((state) => ({ ...state, [windowName]: false }))
-              }
+              onClick={() => {
+                setWindowState((state) => ({ ...state, [windowName]: false }));
+                if (isFullScreen) setIsFullScreen(false);
+              }}
             >
               <img src="/public/window-nav-icons/cross.svg" alt="" />
             </div>
             <div className="dot yellow">
               <img src="/public/window-nav-icons/minus.svg" alt="" />
             </div>
-            <div className="dot green">
+            <div
+              className="dot green"
+              onClick={() => {
+                setIsFullScreen(isFullScreen ? false : true);
+              }}
+            >
               <img src="/public/window-nav-icons/expand.svg" alt="" />
             </div>
           </div>

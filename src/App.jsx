@@ -17,16 +17,32 @@ function App() {
     cli: false,
   });
 
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
   return (
     <main>
-      <Nav windowState={windowState} setWindowState={setWindowState} />
-      <Dock windowState={windowState} setWindowState={setWindowState} />
+      {!isFullScreen && (
+        <>
+          <Nav windowState={windowState} setWindowState={setWindowState} />
+          <Dock windowState={windowState} setWindowState={setWindowState} />
+        </>
+      )}
 
-      {windowState.github && <Github windowName="github" setWindowState={setWindowState} />}
-      {windowState.note && <Note windowName="note" setWindowState={setWindowState} />}
-      {windowState.resume && <Resume windowName="resume" setWindowState={setWindowState} />}
-      {windowState.spotify && <Spotify windowName="spotify" setWindowState={setWindowState} />}
-      {windowState.cli && <Cli windowName="cli" setWindowState={setWindowState} />}
+      {windowState.github && (
+        <Github windowName="github" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
+      {windowState.note && (
+        <Note windowName="note" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
+      {windowState.resume && (
+        <Resume windowName="resume" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
+      {windowState.spotify && (
+        <Spotify windowName="spotify" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
+      {windowState.cli && (
+        <Cli windowName="cli" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
     </main>
   );
 }

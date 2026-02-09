@@ -54,11 +54,13 @@ const welcomeMessage = [
   "Type 'help' for usage examples.",
 ];
 
-const Cli = ({ windowName, setWindowState }) => {
+const Cli = ({ windowName, setWindowState, isFullScreen, setIsFullScreen }) => {
   return (
     <MacWindow
       windowName={windowName}
       setWindowState={setWindowState}
+      isFullScreen={isFullScreen}
+      setIsFullScreen={setIsFullScreen}
       width="45vw"
     >
       <div className="cli-window">

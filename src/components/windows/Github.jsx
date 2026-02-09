@@ -3,12 +3,19 @@ import GithubData from "../../assets/Github.json";
 import MacWindow from "./MacWindow";
 import "./github.scss";
 
-const Github = ({windowName, setWindowState}) => {
-
-
-
+const Github = ({
+  windowName,
+  setWindowState,
+  isFullScreen,
+  setIsFullScreen,
+}) => {
   return (
-    <MacWindow windowName={windowName} setWindowState={setWindowState}>
+    <MacWindow
+      windowName={windowName}
+      setWindowState={setWindowState}
+      isFullScreen={isFullScreen}
+      setIsFullScreen={setIsFullScreen}
+    >
       {/* As children pass hoga .cards pura in the MacWindow */}
       <div className="cards">
         {GithubData.map((project, idx) => {
@@ -26,7 +33,13 @@ const Github = ({windowName, setWindowState}) => {
 
               <div className="tags">
                 {project.tags.map((tag, idx) => {
-                  return tag?<p key={idx} className="tag">{tag}</p>:'Loading...';
+                  return tag ? (
+                    <p key={idx} className="tag">
+                      {tag}
+                    </p>
+                  ) : (
+                    "Loading..."
+                  );
                 })}
               </div>
 

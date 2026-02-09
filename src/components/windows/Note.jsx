@@ -5,7 +5,12 @@ import { atelierDuneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import MacWindow from "./MacWindow";
 import "./notes.scss";
 
-const Note = ({windowName, setWindowState}) => {
+const Note = ({
+  windowName,
+  setWindowState,
+  isFullScreen,
+  setIsFullScreen,
+}) => {
   const [markdown, setMarkdown] = useState(null);
 
   // Removed part from UI => <Markdown>{markdown}</Markdown> : <p>Loading...</p>
@@ -16,7 +21,7 @@ const Note = ({windowName, setWindowState}) => {
       .then((text) => setMarkdown(text));
   }, []);
   return (
-    <MacWindow windowName={windowName} setWindowState={setWindowState}>
+    <MacWindow windowName={windowName} setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen}>
       <div className="note-window">
         {markdown ? (
           <SyntaxHighlighter language="typescript" style={atelierDuneDark}>
