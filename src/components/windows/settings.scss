@@ -1,0 +1,28 @@
+.wallpapers {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  overflow-y: auto;
+  gap: 1rem;
+  padding: 1rem;
+
+  .wallpaper {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .wallpaperImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    &:hover .wallpaperImage {
+      transform: scale(1.1);
+    }
+  }
+}

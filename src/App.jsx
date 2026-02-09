@@ -6,7 +6,8 @@ import Note from "./components/windows/Note";
 import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";
 import Cli from "./components/windows/Cli";
-import { useState } from "react";
+import { useState } from "react"; 
+import Settings from "./components/windows/Settings";
 
 function App() {
   const [windowState, setWindowState] = useState({
@@ -15,12 +16,15 @@ function App() {
     resume: false,
     spotify: false,
     cli: false,
+    settings: false,
   });
 
   const [isFullScreen, setIsFullScreen] = useState(false);
 
+  const [wallpaperIndex, setWallpaperIndex] = useState(localStorage.getItem("selectedWallpaper") || 1);
+
   return (
-    <main>
+    <main style={{backgroundImage:`url("/public/wallpapers/${wallpaperIndex}.jpg")`}}>
       {!isFullScreen && (
         <>
           <Nav windowState={windowState} setWindowState={setWindowState} />
@@ -42,6 +46,9 @@ function App() {
       )}
       {windowState.cli && (
         <Cli windowName="cli" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} />
+      )}
+      {windowState.settings && (
+        <Settings windowName="settings" setWindowState={setWindowState} isFullScreen={isFullScreen} setIsFullScreen={setIsFullScreen} setWallpaperIndex={setWallpaperIndex} />
       )}
     </main>
   );

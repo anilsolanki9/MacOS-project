@@ -47,6 +47,11 @@ const Dock = ({windowState, setWindowState}) => {
       <div className="iconBox" onClick={() => setWindowState({...windowState, cli: !windowState.cli})}>
         <img src="/doc-icons/terminal.webp" alt="" className="icon cli" />
       </div>
+
+      {/* icon-9 */}
+      <div className="iconBox" onClick={() => setWindowState({...windowState, settings: !windowState.settings})}>
+        <img src="/doc-icons/settings.webp" alt="" className="icon settings" />
+      </div>
     </footer>
   );
 };
