@@ -9,6 +9,7 @@ import Cli from "./components/windows/Cli";
 import { useEffect, useState } from "react";
 import Settings from "./components/windows/Settings";
 import Clock from "./components/Clock";
+import Todo from "./components/windows/TodoList";
 
 function App() {
   const [windowState, setWindowState] = useState({
@@ -18,6 +19,7 @@ function App() {
     spotify: false,
     cli: false,
     settings: false,
+    todo: false,
   });
 
   const [isFullScreen, setIsFullScreen] = useState(false);
@@ -106,6 +108,14 @@ function App() {
           setIsFullScreen={setIsFullScreen}
           // setWallpaperIndex={setWallpaperIndex}
           setWallpaper={preloadAndSetWallpaper}
+        />
+      )}
+      {windowState.todo && (
+        <Todo
+          windowName="todo"
+          setWindowState={setWindowState}
+          isFullScreen={isFullScreen}
+          setIsFullScreen={setIsFullScreen}
         />
       )}
     </main>

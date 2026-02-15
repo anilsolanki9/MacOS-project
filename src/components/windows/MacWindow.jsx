@@ -4,21 +4,20 @@ import { Rnd } from "react-rnd";
 
 const MacWindow = ({
   children,
-  width = "37vw",
-  height = "37vw",
+  width,
+  height,
   windowName,
   setWindowState,
   isFullScreen,
   setIsFullScreen,
 }) => {
-  console.log(isFullScreen);
   return (
     <Rnd
       default={{
         x: 100,
         y: 60,
-        width: width,
-        height: height,
+        width: width || "37vw",
+        height: height || "37vw",
       }}
       minWidth={350}
       minHeight={300}
@@ -26,8 +25,7 @@ const MacWindow = ({
       // dragHandleClassName="nav"
       enableResizing={!isFullScreen}
       disableDragging={isFullScreen}
-      className={`mac-window ${isFullScreen ? "full-screen" : ""}`}
-    >
+      className={`mac-window ${isFullScreen ? "full-screen" : ""}`}>
       <div className="window">
         <div className="nav">
           <div className="dots">
@@ -36,8 +34,7 @@ const MacWindow = ({
               onClick={() => {
                 setWindowState((state) => ({ ...state, [windowName]: false }));
                 if (isFullScreen) setIsFullScreen(false);
-              }}
-            >
+              }}>
               <img src="/window-nav-icons/cross.svg" alt="" />
             </div>
             <div className="dot yellow">
@@ -47,8 +44,7 @@ const MacWindow = ({
               className="dot green"
               onClick={() => {
                 setIsFullScreen(isFullScreen ? false : true);
-              }}
-            >
+              }}>
               <img src="/window-nav-icons/expand.svg" alt="" />
             </div>
           </div>
