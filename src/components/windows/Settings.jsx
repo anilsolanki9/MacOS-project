@@ -1,43 +1,40 @@
 import React from "react";
 import MacWindow from "./MacWindow";
 import "./settings.scss";
-const ids = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
-  23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37
-];
+const WALLPAPER_COUNT = 37;
+const ids = Array.from({ length: WALLPAPER_COUNT }, (_, i) => i + 1);
 
 const Settings = ({
   windowName,
   setWindowState,
   isFullScreen,
   setIsFullScreen,
-  setWallpaperIndex,
+  setWallpaper,
 }) => {
-  const handleWallpaperChange = (e) => {
-    const selectedId = parseInt(e.target.id);
-    setWallpaperIndex(selectedId);
-    localStorage.setItem("selectedWallpaper", selectedId);
-  };
-
   return (
     <MacWindow
       windowName={windowName}
       setWindowState={setWindowState}
       isFullScreen={isFullScreen}
       setIsFullScreen={setIsFullScreen}
-      width="70vw"
-    >
+      width="70vw">
       <div className="wallpapers">
         {ids.map((id) => {
           return (
-            <div className="wallpaper">
+            <div className="wallpaper" key={id}>
               <img
-                loading="eager"
+                width={"100%"}
+                height={"100%"}
+                loading="lazy"
+                decoding="async"
                 className="wallpaperImage"
-                src={`/wallpapers/${id}.jpg`}
+                src={`/wallpaper-thumbnails/${id}.jpg`}
                 alt=""
                 id={id}
-                onClick={handleWallpaperChange}
+                onClick={() => {
+                  setWallpaper(id);
+                }}
+                onLoad={(e) => e.target.classList.add("loaded")}
               />
             </div>
           );

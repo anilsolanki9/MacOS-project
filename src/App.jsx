@@ -6,7 +6,7 @@ import Note from "./components/windows/Note";
 import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";
 import Cli from "./components/windows/Cli";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Settings from "./components/windows/Settings";
 import Clock from "./components/Clock";
 
@@ -23,15 +23,32 @@ function App() {
   const [isFullScreen, setIsFullScreen] = useState(false);
 
   const [wallpaperIndex, setWallpaperIndex] = useState(
-    localStorage.getItem("selectedWallpaper") || 1,
+    Number(localStorage.getItem("selectedWallpaper")) || 1,
   );
 
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--wallpaper",
+      `url("/wallpaper-high/${wallpaperIndex}.jpg")`,
+    );
+    localStorage.setItem("selectedWallpaper", wallpaperIndex);
+  }, [wallpaperIndex]);
+
+  function preloadAndSetWallpaper(index) {
+    // already genarates image, so to make loading faster
+    const img = new Image();
+
+    img.decoding = "async";
+    img.fetchPriority = "high";
+    img.src = `/wallpaper-high/${index}.jpg`; // use .jpg if you didn’t convert
+
+    img.onload = () => {
+      setWallpaperIndex(index);
+    };
+  }
+
   return (
-    <main
-      style={{
-        backgroundImage: `url("/wallpaper-high/${wallpaperIndex}.jpg")`,
-      }}
-    >
+    <main>
       {!isFullScreen && (
         <>
           <Nav windowState={windowState} setWindowState={setWindowState} />
@@ -87,7 +104,8 @@ function App() {
           setWindowState={setWindowState}
           isFullScreen={isFullScreen}
           setIsFullScreen={setIsFullScreen}
-          setWallpaperIndex={setWallpaperIndex}
+          // setWallpaperIndex={setWallpaperIndex}
+          setWallpaper={preloadAndSetWallpaper}
         />
       )}
     </main>
