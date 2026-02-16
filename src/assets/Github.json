@@ -2,45 +2,45 @@
   {
     "id": 1,
     "image": "/projects-images/project1.png",
-    "title": "Astratto – Design Agency Website",
-    "description": "A modern and visually rich design agency website with smooth animations, clean layouts, and a premium UI feel. Focused on branding, motion, and presentation.",
-    "tags": ["React", "SCSS", "Framer Motion", "UI Design"],
+    "title": "Astratto – Modern Design Agency Website",
+    "description": "A modern, responsive design agency website built with React 19 and Tailwind CSS v4. Structured using reusable components and optimized with Vite for fast performance. Focused on clean UI, branding presentation, and smooth layout flow.",
+    "tags": ["React", "Tailwind", "Vite", "Responsive UI"],
     "repoLink": "https://github.com/anilsolanki9/Astratto-Design-agency",
     "demoLink": "https://astratto-design-agency.vercel.app/"
   },
   {
     "id": 6,
     "image": "/projects-images/project6.png",
-    "title": "Moviq – Streaming Platform",
-    "description": "A movie streaming platform UI that showcases movies with rich visuals, modern layouts, and a cinematic browsing experience.",
-    "tags": ["React", "API", "Movie App", "UI Design"],
+    "title": "Moviq – Streaming Platform UI",
+    "description": "A modern streaming platform UI built with React 19 and Tailwind CSS v4. Designed with reusable components like Nav, Aside, and dynamic video sections for structured layout flow. Optimized using Vite for fast performance and responsive viewing experience.",
+    "tags": ["React", "Tailwind", "Vite", "Responsive UI"],
     "repoLink": "https://github.com/anilsolanki9/Moviq-streaming-Platform-project",
     "demoLink": "https://moviq-streaming-platform-project.vercel.app/"
   },
   {
     "id": 3,
     "image": "/projects-images/project3.png",
-    "title": "Razorpay Clone",
-    "description": "A responsive Razorpay landing page clone built to replicate real-world fintech UI, layouts, and component structure with pixel-accurate design.",
-    "tags": ["React", "Tailwind CSS", "UI Clone"],
+    "title": "Razorpay Clone – Fintech Landing Page",
+    "description": "A responsive Razorpay-inspired fintech landing page built with React 19 and Tailwind CSS v4. Structured using modular sections like Hero, Features, Testimonials, and CTA components. Optimized with Vite for fast performance and clean UI presentation.",
+    "tags": ["React", "Tailwind", "Vite", "UI Design"],
     "repoLink": "https://github.com/anilsolanki9/Razor-pay-clone",
     "demoLink": "https://razor-pay-clone-wine.vercel.app/"
   },
   {
     "id": 9,
     "image": "/projects-images/project9.png",
-    "title": "DVSY Fashion Store",
-    "description": "A fashion e-commerce style frontend with modern product layouts, smooth transitions, and a clean Tailwind-powered design.",
-    "tags": ["React", "Tailwind CSS", "E-commerce UI"],
+    "title": "DVSY – Fashion Brand Website",
+    "description": "A modern fashion brand website built with React 19 and Tailwind CSS v4. Designed with reusable components and premium typography for a clean, high-end aesthetic. Optimized using Vite for smooth performance and full responsiveness.",
+    "tags": ["React 19", "Tailwind CSS v4", "Vite", "Brand UI"],
     "repoLink": "https://github.com/anilsolanki9/DVSY-Fashion-React-Tailwind-Project",
     "demoLink": "https://dvsy-fashion-react-tailwind-project.vercel.app/"
   },
   {
     "id": 7,
     "image": "/projects-images/project7.png",
-    "title": "Productivity Dashboard",
-    "description": "A productivity-focused dashboard that presents tasks, metrics, and daily insights in a clean and structured layout.",
-    "tags": ["React", "Dashboard", "UI", "State Management"],
+    "title": "Productivity Dashboard – All-in-One Planner App",
+    "description": "A feature-rich productivity dashboard built with HTML, CSS, and JavaScript. Includes Todo List, Daily Planner, Pomodoro Timer, Goals Tracker, Weather API integration, and dynamic theme switching. Uses localStorage for persistent data and real-time updates for an interactive user experience.",
+    "tags": ["HTML5", "CSS3", "JavaScript", "LocalStorage", "Weather API"],
     "repoLink": "https://github.com/anilsolanki9/Productivity-dashboard",
     "demoLink": "https://productivity-dashboard-rho.vercel.app/"
   },
@@ -48,36 +48,50 @@
   {
     "id": 4,
     "image": "/projects-images/project4.png",
-    "title": "Pokemon Saga",
-    "description": "A fun and interactive Pokémon-themed application displaying Pokémon data with dynamic UI, animations, and engaging visual presentation.",
-    "tags": ["React", "API", "CSS", "Animations"],
+    "title": "Pokemon Saga – Interactive Pokedex App",
+    "description": "An interactive Pokémon explorer built with React 19, Tailwind CSS v4, and Axios. Fetches real-time data from the PokeAPI and displays dynamic stat cards with animations using Lottie. Includes batch loading, themed UI based on Pokémon type, and smooth interactive effects.",
+    "tags": ["React", "Tailwind", "Axios", "Lottie", "API Integration"],
     "repoLink": "https://github.com/anilsolanki9/Pokemon_Saga",
     "demoLink": "https://pokemon-saga.vercel.app/"
   },
   {
     "id": 5,
     "image": "/projects-images/project5.png",
-    "title": "Modern Contact List",
-    "description": "A modern contact management application with clean UI, responsive design, and smooth user interactions for managing contacts efficiently.",
-    "tags": ["React", "CSS", "CRUD"],
+    "title": "Contact Manager – React Form UI",
+    "description": "A clean and responsive contact management interface built with React 19 and Tailwind CSS v4. Uses reusable components for contact cards and form handling with structured state management. Optimized with Vite for fast performance and smooth UI experience.",
+    "tags": ["React 19", "Tailwind CSS v4", "Vite", "Form Handling"],
     "repoLink": "https://github.com/anilsolanki9/modern-contact-list",
     "demoLink": "https://modern-contact-list.vercel.app/"
   },
   {
     "id": 2,
     "image": "/projects-images/project2.png",
-    "title": "Web Editor",
-    "description": "A browser-based code editor that allows users to write and preview HTML, CSS, and JavaScript in real time with a clean developer-friendly interface.",
-    "tags": ["HTML", "CSS", "JavaScript", "Live Preview"],
+    "title": "Web Editor – Browser-Based Design Tool",
+    "description": "A browser-based visual design editor built with HTML, CSS, and JavaScript. Supports draggable, resizable elements with layers panel, multi-page system, real-time property controls, and localStorage persistence. Includes export functionality to generate clean HTML or JSON from the created design.",
+    "tags": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Drag & Drop",
+      "LocalStorage",
+      "Export System"
+    ],
     "repoLink": "https://github.com/anilsolanki9/web-editor",
     "demoLink": "https://anilsolanki9.github.io/web-editor/"
   },
   {
     "id": 14,
     "image": "/projects-images/project14.png",
-    "title": "Pinterest Style Gallery",
-    "description": "A responsive Pinterest-style image gallery layout featuring a masonry grid, smooth hover effects, and a clean visual-first design.",
-    "tags": ["HTML", "CSS", "JavaScript", "Responsive"],
+    "title": "Pinterest Style Gallery – Responsive Image Grid",
+    "description": "A responsive Pinterest-style image gallery built with HTML, SCSS, Flexbox, and JavaScript DOM manipulation. Allows users to dynamically add images by title, URL, and column selection. Adapts to 4 columns on desktop and 2 columns on mobile for a smooth, flexible layout.",
+    "tags": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "Flexbox",
+      "DOM Manipulation",
+      "Responsive Design"
+    ],
     "repoLink": "https://github.com/anilsolanki9/Pintrest-Style-Gallary",
     "demoLink": "https://anilsolanki9.github.io/Pintrest-Style-Gallary/"
   },
